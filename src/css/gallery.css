@@ -6,13 +6,9 @@
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 360px);
-  gap: 16px;
+  gap: 24px;
   margin: 0 auto;
   width: fit-content;
-}
-
-.gallery-item {
-  width: 100%;
 }
 
 .gallery-link {
@@ -22,7 +18,7 @@
 
 .gallery-image {
   display: block;
-  width: 100%;
+  width: 360px;
   height: 200px;
   object-fit: cover;
 }

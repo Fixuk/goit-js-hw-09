@@ -1,11 +1,11 @@
 .form-page {
-  padding: 40px 20px;
+  padding: 40px 24px;
   background-color: #fff;
   min-height: 100vh;
 }
 
 .form-wrapper {
-  max-width: 320px;
+  max-width: 408px;
 }
 
 .feedback-form {
@@ -17,23 +17,33 @@
 .feedback-form label {
   display: flex;
   flex-direction: column;
-  gap: 4px;
-  font-size: 14px;
-  color: #212121;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2e2f42;
 }
 
 .feedback-form input,
 .feedback-form textarea {
-  width: 100%;
+  width: 360px;
   padding: 8px 12px;
-  border: 1px solid #ccc;
+  border: 1px solid #808080;
   border-radius: 4px;
-  font-size: 14px;
-  font-family: inherit;
-  color: #212121;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: #2e2f42;
   outline: none;
   box-sizing: border-box;
   transition: border-color 0.2s;
+}
+
+.feedback-form input {
+  height: 40px;
+}
+
+.feedback-form textarea {
+  height: 80px;
+  resize: none;
 }
 
 .feedback-form input:hover,
@@ -43,26 +53,23 @@
 
 .feedback-form input:focus,
 .feedback-form textarea:focus {
-  border-color: #6c8cff;
-}
-
-.feedback-form textarea {
-  resize: none;
+  border-color: #000;
 }
 
 .feedback-form button[type='submit'] {
-  width: 100%;
-  padding: 10px;
-  background-color: #6c8cff;
+  padding: 8px 16px;
+  background-color: #4e75ff;
   color: #fff;
   border: none;
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
   cursor: pointer;
   transition: background-color 0.2s;
+  width: fit-content;
 }
 
 .feedback-form button[type='submit']:hover {
-  background-color: #5c7cfa;
+  background-color: #6b8cff;
 }
