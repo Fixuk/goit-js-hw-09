@@ -12,13 +12,19 @@ let formData = {
 const saved = localStorage.getItem(STORAGE_KEY);
 if (saved) {
   formData = JSON.parse(saved);
-  emailInput.value = formData.email;
-  messageInput.value = formData.message;
+  emailInput.value = formData.email ?? '';
+  messageInput.value = formData.message ?? '';
 }
 
 form.addEventListener('input', evt => {
   formData[evt.target.name] = evt.target.value;
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(formData));
+  localStorage.setItem(
+    STORAGE_KEY,
+    JSON.stringify({
+      email: formData.email.trim(),
+      message: formData.message.trim(),
+    })
+  );
 });
 
 form.addEventListener('submit', evt => {
