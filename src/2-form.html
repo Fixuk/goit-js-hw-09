@@ -9,26 +9,16 @@
   </head>
   <body class="form-page">
     <div class="form-wrapper">
-      <h2>Feedback</h2>
       <form class="feedback-form" autocomplete="off">
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="your@email.com"
-          />
-        </div>
-        <div class="form-field">
-          <label for="message">Message</label>
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Write your message here..."
-          ></textarea>
-        </div>
-        <button type="submit">Send</button>
+        <label>
+          Email
+          <input type="email" name="email" autofocus />
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="8"></textarea>
+        </label>
+        <button type="submit">Submit</button>
       </form>
     </div>
 
