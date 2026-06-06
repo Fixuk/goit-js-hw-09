@@ -9,14 +9,15 @@
 }
 
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .gallery-item {
-  width: 260px;
+  width: 100%;
 }
 
 .gallery-link {
